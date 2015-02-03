@@ -1,0 +1,38 @@
+#giftcard{
+	.info {
+		padding-right: $padding*2;
+	}
+
+	#form-giftcard {
+		padding: $padding;
+		border: 1px solid $default-border-color;
+		background: white;
+		margin-top: $padding;
+		margin-bottom: $padding;
+
+		.payment-info {
+			border-top: 1px solid $default-border-color;
+			margin: -$padding;
+			margin-top: $padding;
+			padding: $padding;
+			background: tint($default-border-color,70);
+			font-size: 12px;
+		}
+
+		.heading {
+			text-align: center;
+			margin: -$padding;
+			margin-bottom: $padding;
+			padding: $padding/2;
+			background: $color-gray80;
+			color: white;
+		}
+
+		.total-price {
+			color: $color-angry-red;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+	}
+
+}

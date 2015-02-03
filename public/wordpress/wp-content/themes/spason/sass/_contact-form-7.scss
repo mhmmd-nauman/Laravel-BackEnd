@@ -1,0 +1,25 @@
+//select the forms
+.wpcf7 {
+	input[type="text"], input[type="email"], input[type="password"], textarea, select {
+		@extend .form-control;
+	}
+
+	button, input[type="submit"]{
+		@extend .btn;
+		@extend .btn-primary;
+	}
+
+	div[role="alert"]{
+		@extend .alert;
+		@extend .alert-danger;
+		&.wpcf7-mail-sent-ok{
+			@extend .alert-success;
+		}
+	}
+
+	.wpcf7-form-control-wrap {
+		span[role="alert"]{
+			color: $color-angry-red;
+		}
+	}
+}

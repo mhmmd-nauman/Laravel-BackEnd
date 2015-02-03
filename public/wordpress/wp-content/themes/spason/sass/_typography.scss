@@ -1,0 +1,168 @@
+@import "base";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Raleway:400,500,300,700);
+
+@include font-face('ElegantIcons', font-files("elegant_font/ElegantIcons.woff","elegant_font/ElegantIcons.ttf", "elegant_font/ElegantIcons.svg"), "elegant_font/ElegantIcons.eot");
+
+@include establish-baseline();
+
+.elegant-icon {
+	font-family: ElegantIcons;
+}
+
+#{headings()},p, ul, li {
+	@include rhythm();
+}
+
+p{
+	@include adjust-font-size-to(14px);
+	@include trailer(1);
+}
+
+h1 {
+	@include adjust-font-size-to(50px);
+	font-weight: 500;
+	@include leader(1/4);
+	@include trailer(1/4);
+	&.big {
+		@include adjust-font-size-to(70px);
+	}
+
+}
+
+h2 {
+	@include adjust-font-size-to(30px);
+	@include trailer(1/2);
+	&.big{
+		font-weight: 300;
+		@include adjust-font-size-to(45px);
+	}
+}
+
+h3 {
+	@include adjust-font-size-to(25px);
+	font-weight: 700;
+}
+
+h4{
+	@include adjust-font-size-to(18px);
+	font-weight: 700;
+}
+
+@media(max-width: $screen-sm-max) {
+	h1 {
+		@include adjust-font-size-to(30px);
+		&.big {
+			@include adjust-font-size-to(40px);
+		}
+	}
+
+	h2 {
+		@include adjust-font-size-to(25px);
+		&.big {
+			@include adjust-font-size-to(30px);
+		}
+	}
+
+	h3 {
+		@include adjust-font-size-to(20px);
+	}
+
+	h4 {
+		@include adjust-font-size-to(15px);
+	}
+}
+
+hgroup {
+	#{headings()} {
+		@include trailer(0);
+		@include leader(0);
+	}
+}
+
+a {
+	@include transition-property(all);
+  	@include transition-duration(0.3s);
+  	@include transition-timing-function(ease-out);
+  	@include link-colors($color-happy-blue, shade($color-happy-blue,20));
+  	&:hover{
+  		text-decoration: none;
+  	}
+}
+
+blockquote {
+	@include adjust-font-size-to(20px);
+	font-family: Raleway;
+	margin: 0px;
+	padding:$padding 60px;
+	position: relative;
+	border: none;
+	&::before {
+		content: "\007C";
+		font-family: ElegantIcons;
+		font-size: 40px;
+		line-height: 40px;
+		color: $color-pastel-green;
+		position: absolute;
+		left: 0px;
+		top: $padding;
+	}
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	&.alignleft{
+		float: left;
+		margin: $padding $padding $padding 0;
+	}
+
+	&.alignright {
+		float: right;
+		margin: $padding 0 $padding $padding;
+	}
+
+	&.aligncenter {
+		margin: $padding auto;
+	}
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-position: outside;
+	padding-left: $padding;
+}
+
+/* Alignment */
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.list-container, .text-box {
+	border: 1px solid $default-border-color;
+	background: $gray-lighter;
+	@include border-radius();
+	padding: $padding;
+	margin-bottom: $padding;
+}
+
+
+//color- ....
+
+.color-angry-red {
+	color: $color-angry-red;
+}
+
+

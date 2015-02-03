@@ -1,0 +1,24 @@
+@import "base";
+
+.btn {
+	font-family: "Raleway";
+}
+
+.btn-outline {
+	border: 2px solid white;
+	color: white;
+	font-weight: 500;
+	background: rgba(0,0,0,0.3);
+	text-shadow: none;
+	@include transition-property(none);
+	&:hover {
+		background: white;
+		color: black;
+		@include single-box-shadow(rgba(0,0,0, 0.2), 0, 0,$padding/2);
+	}
+}
+
+.btn-black {
+	@include background-image(linear-gradient(tint(black,10), tint(black,20)));
+	border: 1px solid rgba(0,0,0,0.1);
+}

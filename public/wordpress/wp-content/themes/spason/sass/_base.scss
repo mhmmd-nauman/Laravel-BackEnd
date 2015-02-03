@@ -1,0 +1,31 @@
+
+
+$base-font-size: 13px;
+$base-line-height: 24px;
+$round-to-nearest-half-line: false;
+
+/***** Colors *****/
+$color-pastel-green: #86C879;
+$color-happy-blue: #29ABE2;
+$color-angry-red: #C1272D;
+$color-peach: #ffb55e;
+
+$color-facebook: #3B5998;
+$color-twitter: #55ACEE;
+$color-pinterest: #CC2121;
+$color-google: #D34836;
+$color-instagram: #34465D;
+
+$color-gray20: tint(black, 80);
+$color-gray50: tint(black, 50);
+$color-gray80: tint(black, 20);
+
+
+$main-nav-height: 60px;
+$secondary-header-height: 40px;
+
+$padding: $base-line-height;
+$default-border-color: #ccc;
+
+$post-height: 350px;
+$image-height: 290px;

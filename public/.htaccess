@@ -1,0 +1,93 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+     RewriteEngine On
+    
+    Redirect 301 /about /om-spason
+    Redirect 301 /contact /kontakt
+    Redirect 301 /jobs /jobb
+    Redirect 301 /lastminute /kampanjer
+    Redirect 301 /privacy /vilkor-integritet-och-cookies/
+    Redirect 301 /user /
+    Redirect 301 /spa/1002/kosta-boda-art-hotel/bokning /spahotell/kosta-boda-art-hotel/paket
+    Redirect 301 /spa/1002/kosta-boda-art-hotel /spahotell/kosta-boda-art-hotel
+    Redirect 301 /spa/1004/badhotellet-spa-konferens/bokning /spahotell/badhotellet-spa-och-konferens-hotel/paket
+    Redirect 301 /spa/1004/badhotellet-spa-konferens /spahotell/badhotellet-spa-och-konferens-hotel
+    Redirect 301 /spa/1005/bokenas-hav-spa-moten/bokning /spahotell/bokenas-hav-spa-moten/paket
+    Redirect 301 /spa/1005/bokenas-hav-spa-moten /spahotell/bokenas-hav-spa-moten
+    Redirect 301 /spa/1009/comwell-varbergs-kurort/bokning /spahotell/comwell-varbergs-kurort/paket
+    Redirect 301 /spa/1009/comwell-varbergs-kurort /spahotell/comwell-varbergs-kurort
+    Redirect 301 /spa/1015/hotel-skansen-bastad/bokning /spahotell/hotel-skansen-bastad/paket
+    Redirect 301 /spa/1015/hotel-skansen-bastad /spahotell/hotel-skansen-bastad
+    Redirect 301 /spa/1018/hotell-sodra-berget/bokning /spahotell/hotell-sodra-berget/paket
+    Redirect 301 /spa/1018/hotell-sodra-berget /spahotell/hotell-sodra-berget
+    Redirect 301 /spa/1019/kurorten-mosseberg/bokning /spahotell/kurorten-mosseberg/paket
+    Redirect 301 /spa/1019/kurorten-mosseberg /spahotell/kurorten-mosseberg
+    Redirect 301 /spa/1023/orbaden-konferens-spa/bokning /spahotell/orbaden-konferens-och-spa/paket
+    Redirect 301 /spa/1023/orbaden-konferens-spa /spahotell/orbaden-konferens-och-spa
+    Redirect 301 /spa/1024/quality-spa-resort-dalecarlia/bokning /spahotell/quality-spa-och-resort-dalecarlia/paket
+    Redirect 301 /spa/1024/quality-spa-resort-dalecarlia /spahotell/quality-spa-och-resort-dalecarlia
+    Redirect 301 /spa/1026/ronneby-brunn/bokning /spahotell/ronneby-brunn/paket
+    Redirect 301 /spa/1026/ronneby-brunn /spahotell/ronneby-brunn
+    Redirect 301 /spa/1027/sankt-jorgen-park-resort/bokning /spahotell/sankt-jorgen-park-resort/paket
+    Redirect 301 /spa/1027/sankt-jorgen-park-resort /spahotell/sankt-jorgen-park-resort
+    Redirect 301 /spa/1030/skepparholmen/bokning /spahotell/skepparholmen-nacka/paket
+    Redirect 301 /spa/1030/skepparholmen /spahotell/skepparholmen-nacka
+    Redirect 301 /spa/1031/smogens-hafvsbad/bokning /spahotell/smogens-hafvsbad/paket
+    Redirect 301 /spa/1031/smogens-hafvsbad /spahotell/smogens-hafvsbad
+    Redirect 301 /spa/1033/storhogna-hogfjallshotell-spa/bokning /spahotell/storhogna-hogfjallshotell-och-spa/paket
+    Redirect 301 /spa/1033/storhogna-hogfjallshotell-spa /spahotell/storhogna-hogfjallshotell-och-spa
+    Redirect 301 /spa/1034/torekov-hotell/bokning /spahotell/torekov-hotell/paket
+    Redirect 301 /spa/1034/torekov-hotell /spahotell/torekov-hotell
+    Redirect 301 /spa/1035/vann-spa-hotell-och-konferens/bokning /spahotell/vann-spa-hotell-och-konferens/paket
+    Redirect 301 /spa/1035/vann-spa-hotell-och-konferens /spahotell/vann-spa-hotell-och-konferens
+    Redirect 301 /spa/1036/varbergs-stadshotell-asia-spa/bokning /spahotell/varbergs-stadshotell-och-asia-spa/paket
+    Redirect 301 /spa/1036/varbergs-stadshotell-asia-spa /spahotell/varbergs-stadshotell-och-asia-spa
+    Redirect 301 /spa/1038/ystad-saltsjobad/bokning /spahotell/ystad-saltsjobad/paket
+    Redirect 301 /spa/1038/ystad-saltsjobad /spahotell/ystad-saltsjobad
+    Redirect 301 /spa/1039/akerblads-hotell-gastgiveri/bokning /spahotell/kerblads-hotell-och-gastgiveri/paket
+    Redirect 301 /spa/1039/akerblads-hotell-gastgiveri /spahotell/kerblads-hotell-och-gastgiveri
+    Redirect 301 /spa/2040/falkenberg-strandbad/bokning /spahotell/falkenberg-strandbad/paket
+    Redirect 301 /spa/2040/falkenberg-strandbad /spahotell/falkenberg-strandbad
+    Redirect 301 /spa/2042/ranas-slott/bokning /spahotell/ranas-slott/paket
+    Redirect 301 /spa/2042/ranas-slott /spahotell/ranas-slott
+    #Redirect 301 /spa /spahotell#!/middle /
+    #Redirect 301 /spa /spahotell#!/north /
+    #Redirect 301 /spa /spahotell#!/south /
+    #Redirect 301 /spa /spahotell#!/sweden /
+    Redirect 301 /spa /spahotell
+    
+#    RewriteRule ^magazin/$ /magazin/$1 [L]
+#    RewriteCond %{REQUEST_FILENAME} -d
+#    RewriteRule ^ /magazin/index.php [L]
+
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteRule ^magazin /magazin/index.php [L]
+    
+    # Redirect Trailing Slashes...
+    #RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # block visitors referred from semalt.com
+    RewriteCond %{HTTP_REFERER} semalt\.com [NC]
+    RewriteRule .* - [F]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+
+# BEGIN WordPress
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+#</IfModule>
+# END WordPress
