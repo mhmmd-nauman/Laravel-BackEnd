@@ -9,12 +9,10 @@ class SentryUserGroupSeeder extends Seeder {
      */
     public function run()
     {
-//        DB::table('users_groups')->delete();
 
-//        $userUser = Sentry::getUserProvider()->findByLogin('user@user.com');
-        $adminUser = Sentry::getUserProvider()->findByLogin('Caroline@spason.se');
-        $admin1User = Sentry::getUserProvider()->findByLogin('Magnus@spason.se');
-        $admin2User = Sentry::getUserProvider()->findByLogin('Kristoffer@spason.se');
+        $adminUser = Sentry::getUserProvider()->findByLogin('mhmmd.nauman@gmailcom');
+        $normalUser = Sentry::getUserProvider()->findByLogin('mhmmd.user@gmail.com');
+        
 
         $userGroup = Sentry::getGroupProvider()->findByName('Users');
         $adminGroup = Sentry::getGroupProvider()->findByName('Admins');
@@ -23,10 +21,8 @@ class SentryUserGroupSeeder extends Seeder {
 //        $userUser->addGroup($userGroup);
         $adminUser->addGroup($userGroup);
         $adminUser->addGroup($adminGroup);
-        $admin1User->addGroup($userGroup);
-        $admin1User->addGroup($adminGroup);
-        $admin2User->addGroup($userGroup);
-        $admin2User->addGroup($adminGroup);
+        $normalUser->addGroup($userGroup);
+        
     }
 
 }

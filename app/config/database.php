@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'spason_prod',
+			'database'  => 'hotel',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

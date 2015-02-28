@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class UpdateTableHotelsAddHighlights extends Migration {
+class CreateTableHotelsAddHighlights extends Migration {
 
 	/**
 	 * Run the migrations.

@@ -19,7 +19,7 @@ class DeleteRoomsPriceFkAndAlterSettings extends Migration {
 
         Schema::table('room_prices', function(Blueprint $table)
         {
-            $table->dropForeign('room_prices_room_id_foreign');
+            //$table->dropForeign('room_prices_room_id_foreign');
         });
 	}
 

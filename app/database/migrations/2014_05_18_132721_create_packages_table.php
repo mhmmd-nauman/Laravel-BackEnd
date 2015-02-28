@@ -12,7 +12,7 @@ class CreatePackagesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('packages', function(Blueprint $table) {
+	    Schema::create('packages', function(Blueprint $table) {
             $table->increments('id');
             $table->string('name', 255);
             $table->string('short_description', 1024);
@@ -28,6 +28,8 @@ class CreatePackagesTable extends Migration {
             $table->dateTime('end_date');
             $table->unsignedInteger('days_in_advance')->nullable();
             $table->unsignedInteger('days_available')->nullable();
+            //$table->unsignedInteger('overnights_min')->nullable();
+            
             $table->text('package_includes');
             $table->timestamps();
 		});

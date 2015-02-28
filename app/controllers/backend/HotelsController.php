@@ -13,7 +13,8 @@ class HotelsController extends BackendBaseController {
 	 */
 	public function index()
 	{
-		return View::make('backend.hotels.index');
+            
+                return View::make('backend.hotels.index');
 	}
 	
 	/**

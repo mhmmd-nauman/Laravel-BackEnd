@@ -12,10 +12,12 @@ class CreateHotelsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('hotels', function(Blueprint $table) {
+            Schema::create('hotels', function(Blueprint $table) {
             $table->increments('id');
             $table->string('name', 255);
             $table->text('description');
+            //$table->text('summary')->nullable();
+            
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('address_id')->nullable();
             $table->string('phone', 255)->nullable();
